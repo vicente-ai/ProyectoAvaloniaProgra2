@@ -1,0 +1,53 @@
+@startuml
+class Persona{
+    - int rut
+    - int digitoVerificador
+    - sexo sexo
+    - DateTime fechaNacimiento
+    - int edad
+    - string direccion
+    - int telefono
+}
+class Paciente{}
+class Secretarios{}
+class Limpieza{}
+class Medico{}
+class Gerencia{}
+class Medicamento {}
+class Desechables {}
+class SalaDeEspera {}
+class Box{}
+class TENS{}
+class Seguridad{}
+
+interface Trabajadores{}
+interface Insumo {}
+interface Infraestructura{}
+
+enum sexo{
+
+}
+enum prevision{
+
+}
+
+enum AFP{
+
+}
+enum relacion{
+
+}
+enum turnoTrabajo{
+
+}
+
+'Relaciones 
+Persona<-- Paciente 
+Persona<-- Secretarios 
+Persona<-- Limpieza 
+Persona<-- Medico 
+Persona<-- Gerencia 
+Persona<-- Seguridad 
+
+@enduml
+
